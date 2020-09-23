@@ -1,0 +1,261 @@
+
+/* Menu burger */
+
+.menu-icon {
+    top: 30px;
+    right: 30px;
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    transition: transform 1s ;
+}
+
+.menu-icon span.trait {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+    width: 27px;
+    height: 3px;
+
+    background-color:  #212529;
+    transform:translateX(-50%) translateY(-50%);
+}
+
+.menu-icon span.trait::before, .menu-icon span.trait::after {
+    content: '';
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 27px;
+    height: 3px;
+
+    background-color:  #212529;
+    transform: translateY(-9px);
+    transition: transform 1s;
+}
+
+.menu-icon span.trait::after {
+    transform:translateY(9px);
+}
+
+.menu-icon:hover span.trait::before {
+    transform: translateY(-12px);
+
+    }
+
+.menu-icon:hover span.trait::after {
+    transform: translateY(12px);
+    
+   }
+
+.menu-icon span.trait{
+    transition:  1s ;
+}
+
+
+.change .menu-icon{
+    top: 10px;
+    right: 6px;
+    position: absolute;
+    transition: all 1s;
+    transform: rotate(180deg);
+    
+}
+
+.change .menu-icon  span.trait {
+    background: transparent;
+   }
+
+.change .menu-icon span.trait::before, .change .menu-icon span.trait::after{
+    transform-origin: 50% 50%;
+}   
+
+
+.change .menu-icon span.trait::before{
+    transform: rotateY(0) rotate(45deg);
+}
+
+.change .menu-icon span.trait::after{
+    transform: rotateY(0) rotate(-45deg);
+
+}
+
+.menu-icon svg{
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: #212529;
+    stroke-dasharray: 170;
+    stroke-dashoffset: 170;
+    transition: stroke-dashoffset, 1s transform 1s;
+}
+
+.change .menu-icon svg {
+    transform:rotate(-180deg);
+    stroke-dashoffset: 0;
+}
+
+/* Fin menu burger */
+
+h1 h2 h5 {
+    font-family: 'Caladea', serif;
+}
+
+h5{
+    color: whitesmoke;
+}
+
+.list i{
+   color: black;
+}
+
+p {
+    font-weight: bold;
+    font-family: 'Aileron',sans-serif;
+    opacity: 0.7;
+    line-height: 2rem;
+
+}
+
+footer p {
+    font-weight: bold;
+}
+header {
+    background-image: url("../img/prairie.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.header-nav {
+    margin-bottom: 200px;
+}
+
+.list {
+    display: none;
+    float: right;
+    list-style: none;
+    padding-right: 20px;
+
+
+}
+
+.change .list {
+    display: initial;
+}
+
+.header-nav li:hover{
+    opacity: 0.5;
+}
+
+.opac li {
+    opacity: 1;
+}
+
+.p-title {
+    opacity: 0.5;
+}
+
+.main {
+    padding-top: 340px;
+
+}
+
+.mini-title {
+    color: #d63c37;
+
+}
+
+.mini-title-star::before{
+    position: absolute;
+    content: '\2606';
+    font-size: 20px;
+    color: #d63c37;
+}
+
+.mini-title-star p {
+    margin-left: 35px;
+}
+
+.mini-title-heart::before{
+    position: absolute;
+    color: #d63c37;
+    font-size: 20px;
+    content: '\2661';
+}
+
+.mini-title-heart p {
+    margin-left: 35px;
+}
+
+.mini-title-moon::before{
+    position: absolute;
+    color: #d63c37;
+    content: '\263E';
+    font-size: 20px;
+}
+
+.mini-title-moon p {
+    margin-left: 35px;
+}
+
+.marc{
+    color: #d63c37;
+    text-decoration:underline ;
+}
+  
+.title-red {
+    color:#d63c37;
+}
+
+.img-statue {
+    margin-top: 235px;
+}
+
+footer{
+    background-color:#d63c37;
+    padding-top: 175px;
+    padding-bottom: 175px;
+}
+
+.love {
+    color: #212529;
+    text-decoration: underline;
+}
+
+/*Affichage des éléments quand le viewport fait 990px ou moins*/
+
+@media (max-width: 990px) {
+    
+    footer {
+        padding: 0;
+    }
+    
+    .main {
+        padding-top: 10%;
+    }
+
+    .img-statue {
+        overflow: hidden;
+        margin-top: 10%;
+    }
+
+    .p-main {
+        text-align: left;
+    }
+    
+    .header-nav li:hover{
+        opacity: 1;
+    }
+
+    .header-nav li{
+        opacity: 0.2;
+
+    }
+
+}
