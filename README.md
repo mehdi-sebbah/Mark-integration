@@ -5,4 +5,4 @@ This project is the first that I carried out during my training, I used in parti
 styling was done via the bootstrap framework.
 
 Ce projet est le premier que j'ai effectué durant ma formation, j'ai notamment utilisé les langages html , css ainsi que le langage de programmation javascript.
-le style a était fait via le framework bootstrap.
+Le style a était fait via le framework bootstrap.
